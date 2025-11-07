@@ -41,3 +41,8 @@ def predict(request):
         "prediction": pred[0]
     }
     return JsonResponse(response)
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'index.html')

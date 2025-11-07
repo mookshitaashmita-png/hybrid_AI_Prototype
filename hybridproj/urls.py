@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from api.views import home  # import your home view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),   # add this
+    path('api/', include('api.urls')),  # your existing API routes
+    path('', home, name='home'),        # root URL for index.html
 ]
+
 
