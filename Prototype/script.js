@@ -2,10 +2,9 @@
 // e.g. const BACKEND = "https://abcd-12-34-56-78.ngrok.io";
 
 // Set backend to your Django API (no trailing slash here, we'll append /predict/)
-const BACKEND = "http://127.0.0.1:8000/api"; // or "http://localhost:8000/api"
-
-
+const BACKEND = "https://hybrid-ai-prototype-new.onrender.com/api";
 document.getElementById('backendUrl').innerText = BACKEND || 'SET_NGROK_URL';
+
 
 document.getElementById('sendBtn').addEventListener('click', sendMessage);
 document.getElementById('clearBtn').addEventListener('click', () => {
