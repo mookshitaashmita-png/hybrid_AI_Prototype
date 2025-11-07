@@ -133,3 +133,5 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
+ALLOWED_HOSTS = ['hybrid-ai-prototype-new.onrender.com', '127.0.0.1', 'localhost']
+
